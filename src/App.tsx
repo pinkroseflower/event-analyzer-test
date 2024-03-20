@@ -12,7 +12,7 @@ const App: React.FC = () => {
   return (
     <EventAnalyzer>
       <div>
-        <form>
+        <form method="POST">
           <label htmlFor="username">Username: </label>
           <input id="username" name="username" />
           <br />
@@ -58,11 +58,13 @@ const App: React.FC = () => {
             name="checkbox"
             value="Checkbox"
           />
-          <label htmlFor="vehicle1"> I have a bike</label>
+          <label htmlFor="checkbox"> I have a bike</label>
           <br />
           <br />
-          <button type="submit">Submit</button>
+          <button type="submit">Register</button>
         </form>
+        <br />
+        <button>One punch</button>
       </div>
     </EventAnalyzer>
   );
